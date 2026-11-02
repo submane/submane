@@ -277,7 +277,7 @@
 
   /* ---- 通信1：料金カタログの取得 ---- */
   var CATALOG_SOURCES = [
-    {url: "https://raw.githubusercontent.com/mayonnaiseyaki/submane/main/catalog.json", label: "GitHubから取得"},
+    {url: "https://raw.githubusercontent.com/submane/submane/main/catalog.json", label: "GitHubから取得"},
     {url: "./catalog.json", label: "サーバーから取得"}
   ];
   function loadCatalog(){
@@ -696,7 +696,7 @@
 
 
   /* ---- 解約情報の投稿：GitHubのIssueとして送り、運営が確認してからカタログに反映する ---- */
-  var REPO = "https://github.com/mayonnaiseyaki/submane";
+  var REPO = "https://github.com/submane/submane";
   function baseHost(u){
     try{
       var h = new URL(u).hostname.replace(/^www\./, "").split(".");
